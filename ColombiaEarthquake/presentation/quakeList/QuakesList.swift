@@ -8,42 +8,64 @@
 import SwiftUI
 
 struct QuakesList: View {
-    @Binding var showIntroduction: Bool
-    @StateObject private var viewModel: QuakesViewModel
+    @EnvironmentObject var provider: QuakesProvider
 
-    init(showIntroduction: Binding<Bool>, provider: QuakesProvider) {
-        self._showIntroduction = showIntroduction
-        self._viewModel = StateObject(wrappedValue: QuakesViewModel(provider: provider))
-    }
+    @AppStorage("lastUpdated")
+    var lastUpdated = Date.distantFuture.timeIntervalSince1970
+
+    @State var isLoading = false
+    @State private var error: QuakeError?
+    @State private var hasError = false
 
     var body: some View {
-        NavigationView {
-            VStack {
-                if viewModel.isLoading {
+        
+            VStack{
+                if isLoading {
                     ProgressView()  // Animación de carga
                         .progressViewStyle(CircularProgressViewStyle())
                         .scaleEffect(1.5)
                         .padding(.vertical, 20)
                 }
-                List(viewModel.quakes) { quake in
-                    NavigationLink(destination: QuakeDetail(quake: quake)) {
-                        QuakeRow(quake: quake)
+                List() {
+                    ForEach(provider.quakes) { quake in
+                        NavigationLink(destination: QuakeDetail(quake: quake)) {
+                            QuakeRow(quake: quake)
+                        }
                     }
                 }
                 .listStyle(.inset)
-                .navigationTitle(viewModel.title)
+                .navigationTitle(title)
                 .toolbar(content: toolbarContent)
                 .refreshable {
-                    await viewModel.fetchQuakes()
+                    do {
+                        try await provider.fetchQuakes()
+                    } catch {
+                        self.error = QuakeError.missingData
+                        hasError = true
+                    }
                 }
             }
-        }
         .task {
-            await viewModel.fetchQuakes()
+            await fetchQuakes()
         }
-        .alert(isPresented: $viewModel.hasError) {
-            Alert(title: Text("Error"), message: Text(viewModel.error?.localizedDescription ?? "Unknown error"), dismissButton: .default(Text("OK")))
+    }
+}
+
+extension QuakesList {
+    var title: String {
+        "Ultimos Terremotos"
+    }
+    
+    func fetchQuakes() async {
+        isLoading = true
+        do {
+            try await provider.fetchQuakes()
+            lastUpdated = Date().timeIntervalSince1970
+        } catch {
+            self.error = error as? QuakeError ?? .unexpectedError(error: error)
+            self.hasError = true
         }
+        isLoading = false
     }
 }
 

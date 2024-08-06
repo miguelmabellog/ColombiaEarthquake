@@ -7,30 +7,10 @@
 
 import SwiftUI
 
-extension Quakes {
+extension QuakesList {
     
     @ToolbarContentBuilder
     func toolbarContent() -> some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            Button(action: {
-                showIntroduction = true
-            }) {
-                Image(systemName: "arrow.backward")
-                    .foregroundColor(.blue)
-            }
-        }
-        
-        ToolbarItem(placement: .navigationBarTrailing) {
-            NavigationLink(destination: SearchPlaceView()) {
-                Text("Buscar Por Lugar")
-                    .font(.headline)
-            }
-        }
-        
-        
-        
-        
-        
         
         ToolbarItemGroup(placement: .bottomBar) {
             RefreshButton {

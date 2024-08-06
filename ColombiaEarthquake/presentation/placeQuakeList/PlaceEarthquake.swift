@@ -12,7 +12,6 @@ import SwiftUI
 struct PlaceEarthquake: View {
     let centroPobladoId: String
     let centroPobladoName: String
-    @Binding var showIntroduction: Bool
     @EnvironmentObject var provider: QuakesProvider
 
     @AppStorage("lastUpdated")

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ColombiaEarthquakeApp: App {
+    @StateObject var quakesProvider = QuakesProvider()
+    @State private var showIntroduction = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack{
+                IntroductionView()
+            }
+                    .environmentObject(quakesProvider)
+            
         }
     }
 }

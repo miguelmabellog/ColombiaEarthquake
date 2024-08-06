@@ -7,22 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4994FC8F2C582981000AA766 /* QuakesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2C72C51146B007A165E /* QuakesList.swift */; };
+		49B8A2AE2C4C238D007A165E /* ColombiaEarthquakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2AD2C4C238D007A165E /* ColombiaEarthquakeTests.swift */; };
+		49B8A2B72C4EA36B007A165E /* QuakesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2B62C4EA36B007A165E /* QuakesData.swift */; };
+		49B8A2BF2C5082D8007A165E /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2BE2C5082D8007A165E /* HTTPDataDownloader.swift */; };
+		49B8A2C12C508398007A165E /* QuakeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2C02C508398007A165E /* QuakeClient.swift */; };
+		49B8A2C22C508B03007A165E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2B42C4C2499007A165E /* TestData.swift */; };
+		49B8A2C42C508B7A007A165E /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2C32C508B7A007A165E /* TestDownloader.swift */; };
+		49B8A2C62C51132F007A165E /* QuakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2C52C51132F007A165E /* QuakesProvider.swift */; };
+		49B8A2CC2C511568007A165E /* QuakeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2CB2C511568007A165E /* QuakeRow.swift */; };
+		49B8A2CE2C51159C007A165E /* QuakeMagnitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2CD2C51159C007A165E /* QuakeMagnitude.swift */; };
+		49B8A2D02C511761007A165E /* Quakes+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2CF2C511761007A165E /* Quakes+Toolbar.swift */; };
+		49B8A2D22C5117A8007A165E /* ToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2D12C5117A8007A165E /* ToolbarStatus.swift */; };
+		49B8A2D42C5117E9007A165E /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2D32C5117E9007A165E /* RefreshButton.swift */; };
+		49B8A2D82C5169FD007A165E /* Quake+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2D72C5169FD007A165E /* Quake+Color.swift */; };
+		49B8A2DA2C516BEB007A165E /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2D92C516BEB007A165E /* QuakeDetail.swift */; };
+		49B8A2DC2C516C17007A165E /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A2DB2C516C17007A165E /* QuakeDetailMap.swift */; };
+		49C861F42C5BD59B00174502 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861F32C5BD59B00174502 /* Introduction.swift */; };
+		49C861F62C5BDF7C00174502 /* SearchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861F52C5BDF7C00174502 /* SearchPlace.swift */; };
+		49C861F82C5C0BCD00174502 /* Departmaneto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861F72C5C0BCD00174502 /* Departmaneto.swift */; };
+		49C861FA2C5C0F2A00174502 /* DepartamentosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861F92C5C0F2A00174502 /* DepartamentosData.swift */; };
+		49C861FC2C5C1F9500174502 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861FB2C5C1F9500174502 /* Municipio.swift */; };
+		49C861FE2C5C20EE00174502 /* MunicipiosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861FD2C5C20EE00174502 /* MunicipiosData.swift */; };
+		49C862002C5C2A2E00174502 /* CentroPoblado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C861FF2C5C2A2E00174502 /* CentroPoblado.swift */; };
+		49C862022C5C2CC400174502 /* CentrosPobladosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862012C5C2CC400174502 /* CentrosPobladosData.swift */; };
+		49C862042C5C5BEC00174502 /* PlaceEarthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862032C5C5BEC00174502 /* PlaceEarthquake.swift */; };
+		49C862062C5C631A00174502 /* QuakeByPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862052C5C631A00174502 /* QuakeByPlace.swift */; };
+		49C862082C5C6C3E00174502 /* QuakesByPlacesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862072C5C6C3E00174502 /* QuakesByPlacesData.swift */; };
+		49C8620A2C5C70E800174502 /* QuakeByPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862092C5C70E800174502 /* QuakeByPlaceRow.swift */; };
+		49C8620C2C5C73D800174502 /* QuakeByPlace+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8620B2C5C73D800174502 /* QuakeByPlace+Color.swift */; };
+		49C862162C61ABC400174502 /* QuakeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862152C61ABC400174502 /* QuakeListViewModel.swift */; };
+		49C8621F2C626BE000174502 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8621E2C626BE000174502 /* MainMenu.swift */; };
+		49C862222C627F6C00174502 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862212C627F6C00174502 /* NotificationSettingsView.swift */; };
+		49C862242C62B24100174502 /* NotificationsSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862232C62B24100174502 /* NotificationsSettingsViewModel.swift */; };
+		49C862262C62B2A900174502 /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C862252C62B2A900174502 /* SearchPlaceViewModel.swift */; };
 		49F105052C4B36EE00C217D8 /* ColombiaEarthquakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F105042C4B36EE00C217D8 /* ColombiaEarthquakeApp.swift */; };
 		49F105072C4B36EE00C217D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F105062C4B36EE00C217D8 /* ContentView.swift */; };
 		49F105092C4B36F000C217D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F105082C4B36F000C217D8 /* Assets.xcassets */; };
 		49F1050C2C4B36F000C217D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F1050B2C4B36F000C217D8 /* Preview Assets.xcassets */; };
+		49F105142C4B391200C217D8 /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F105132C4B391200C217D8 /* Quake.swift */; };
+		49F105162C4B3BC100C217D8 /* QuakeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F105152C4B3BC100C217D8 /* QuakeLocation.swift */; };
+		49F105182C4B3C6600C217D8 /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F105172C4B3C6600C217D8 /* QuakeError.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49B8A2AF2C4C238D007A165E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F104F92C4B36EE00C217D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F105002C4B36EE00C217D8;
+			remoteInfo = ColombiaEarthquake;
+		};
+		49F105212C4C21C600C217D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F104F92C4B36EE00C217D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F105002C4B36EE00C217D8;
+			remoteInfo = ColombiaEarthquake;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		49B8A2AB2C4C238D007A165E /* ColombiaEarthquakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColombiaEarthquakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B8A2AD2C4C238D007A165E /* ColombiaEarthquakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColombiaEarthquakeTests.swift; sourceTree = "<group>"; };
+		49B8A2B42C4C2499007A165E /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		49B8A2B62C4EA36B007A165E /* QuakesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesData.swift; sourceTree = "<group>"; };
+		49B8A2BE2C5082D8007A165E /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
+		49B8A2C02C508398007A165E /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
+		49B8A2C32C508B7A007A165E /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
+		49B8A2C52C51132F007A165E /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
+		49B8A2C72C51146B007A165E /* QuakesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesList.swift; sourceTree = "<group>"; };
+		49B8A2CB2C511568007A165E /* QuakeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeRow.swift; sourceTree = "<group>"; };
+		49B8A2CD2C51159C007A165E /* QuakeMagnitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeMagnitude.swift; sourceTree = "<group>"; };
+		49B8A2CF2C511761007A165E /* Quakes+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quakes+Toolbar.swift"; sourceTree = "<group>"; };
+		49B8A2D12C5117A8007A165E /* ToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarStatus.swift; sourceTree = "<group>"; };
+		49B8A2D32C5117E9007A165E /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		49B8A2D72C5169FD007A165E /* Quake+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Color.swift"; sourceTree = "<group>"; };
+		49B8A2D92C516BEB007A165E /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
+		49B8A2DB2C516C17007A165E /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = "<group>"; };
+		49C861F32C5BD59B00174502 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		49C861F52C5BDF7C00174502 /* SearchPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlace.swift; sourceTree = "<group>"; };
+		49C861F72C5C0BCD00174502 /* Departmaneto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departmaneto.swift; sourceTree = "<group>"; };
+		49C861F92C5C0F2A00174502 /* DepartamentosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentosData.swift; sourceTree = "<group>"; };
+		49C861FB2C5C1F9500174502 /* Municipio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
+		49C861FD2C5C20EE00174502 /* MunicipiosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipiosData.swift; sourceTree = "<group>"; };
+		49C861FF2C5C2A2E00174502 /* CentroPoblado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroPoblado.swift; sourceTree = "<group>"; };
+		49C862012C5C2CC400174502 /* CentrosPobladosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrosPobladosData.swift; sourceTree = "<group>"; };
+		49C862032C5C5BEC00174502 /* PlaceEarthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEarthquake.swift; sourceTree = "<group>"; };
+		49C862052C5C631A00174502 /* QuakeByPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeByPlace.swift; sourceTree = "<group>"; };
+		49C862072C5C6C3E00174502 /* QuakesByPlacesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesByPlacesData.swift; sourceTree = "<group>"; };
+		49C862092C5C70E800174502 /* QuakeByPlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeByPlaceRow.swift; sourceTree = "<group>"; };
+		49C8620B2C5C73D800174502 /* QuakeByPlace+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuakeByPlace+Color.swift"; sourceTree = "<group>"; };
+		49C8620D2C5D33EB00174502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49C862152C61ABC400174502 /* QuakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeListViewModel.swift; sourceTree = "<group>"; };
+		49C8621E2C626BE000174502 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		49C862212C627F6C00174502 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		49C862232C62B24100174502 /* NotificationsSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsViewModel.swift; sourceTree = "<group>"; };
+		49C862252C62B2A900174502 /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 		49F105012C4B36EE00C217D8 /* ColombiaEarthquake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColombiaEarthquake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F105042C4B36EE00C217D8 /* ColombiaEarthquakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColombiaEarthquakeApp.swift; sourceTree = "<group>"; };
 		49F105062C4B36EE00C217D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49F105082C4B36F000C217D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F1050B2C4B36F000C217D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49F105132C4B391200C217D8 /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		49F105152C4B3BC100C217D8 /* QuakeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeLocation.swift; sourceTree = "<group>"; };
+		49F105172C4B3C6600C217D8 /* QuakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeError.swift; sourceTree = "<group>"; };
+		49F1051D2C4C21C600C217D8 /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49B8A2A82C4C238D007A165E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F104FE2C4B36EE00C217D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F1051A2C4C21C600C217D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,10 +140,161 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B8A2AC2C4C238D007A165E /* ColombiaEarthquakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2AD2C4C238D007A165E /* ColombiaEarthquakeTests.swift */,
+			);
+			path = ColombiaEarthquakeTests;
+			sourceTree = "<group>";
+		};
+		49C8620E2C61A9B100174502 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				49C862202C627F3E00174502 /* notificationsSettings */,
+				49C8621D2C626BBA00174502 /* mainMenu */,
+				49C862182C61AF5C00174502 /* introduction */,
+				49C862172C61ABDC00174502 /* searchPlace */,
+				49C862132C61AA6700174502 /* placeQuakeList */,
+				49C862122C61AA2D00174502 /* quakeList */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		49C8620F2C61A9F800174502 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				49F105172C4B3C6600C217D8 /* QuakeError.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		49C862102C61AA0600174502 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2C52C51132F007A165E /* QuakesProvider.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		49C862112C61AA1C00174502 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2C02C508398007A165E /* QuakeClient.swift */,
+				49B8A2BE2C5082D8007A165E /* HTTPDataDownloader.swift */,
+				49C862142C61AADC00174502 /* model */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		49C862122C61AA2D00174502 /* quakeList */ = {
+			isa = PBXGroup;
+			children = (
+				49C8621A2C61BB7E00174502 /* quakeDetail */,
+				49C8621C2C62374A00174502 /* quakeRow */,
+				49C8621B2C62370000174502 /* toolbar */,
+				49B8A2CD2C51159C007A165E /* QuakeMagnitude.swift */,
+				49B8A2D72C5169FD007A165E /* Quake+Color.swift */,
+				49B8A2C72C51146B007A165E /* QuakesList.swift */,
+				49C862152C61ABC400174502 /* QuakeListViewModel.swift */,
+			);
+			path = quakeList;
+			sourceTree = "<group>";
+		};
+		49C862132C61AA6700174502 /* placeQuakeList */ = {
+			isa = PBXGroup;
+			children = (
+				49C862032C5C5BEC00174502 /* PlaceEarthquake.swift */,
+				49C862092C5C70E800174502 /* QuakeByPlaceRow.swift */,
+				49C8620B2C5C73D800174502 /* QuakeByPlace+Color.swift */,
+			);
+			path = placeQuakeList;
+			sourceTree = "<group>";
+		};
+		49C862142C61AADC00174502 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				49C862072C5C6C3E00174502 /* QuakesByPlacesData.swift */,
+				49C862012C5C2CC400174502 /* CentrosPobladosData.swift */,
+				49C861FF2C5C2A2E00174502 /* CentroPoblado.swift */,
+				49C861FD2C5C20EE00174502 /* MunicipiosData.swift */,
+				49C861FB2C5C1F9500174502 /* Municipio.swift */,
+				49C861F92C5C0F2A00174502 /* DepartamentosData.swift */,
+				49C861F72C5C0BCD00174502 /* Departmaneto.swift */,
+				49B8A2B62C4EA36B007A165E /* QuakesData.swift */,
+				49F105152C4B3BC100C217D8 /* QuakeLocation.swift */,
+				49C862052C5C631A00174502 /* QuakeByPlace.swift */,
+				49F105132C4B391200C217D8 /* Quake.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		49C862172C61ABDC00174502 /* searchPlace */ = {
+			isa = PBXGroup;
+			children = (
+				49C861F52C5BDF7C00174502 /* SearchPlace.swift */,
+				49C862252C62B2A900174502 /* SearchPlaceViewModel.swift */,
+			);
+			path = searchPlace;
+			sourceTree = "<group>";
+		};
+		49C862182C61AF5C00174502 /* introduction */ = {
+			isa = PBXGroup;
+			children = (
+				49C861F32C5BD59B00174502 /* Introduction.swift */,
+			);
+			path = introduction;
+			sourceTree = "<group>";
+		};
+		49C8621A2C61BB7E00174502 /* quakeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2D92C516BEB007A165E /* QuakeDetail.swift */,
+				49B8A2DB2C516C17007A165E /* QuakeDetailMap.swift */,
+			);
+			path = quakeDetail;
+			sourceTree = "<group>";
+		};
+		49C8621B2C62370000174502 /* toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2D32C5117E9007A165E /* RefreshButton.swift */,
+				49B8A2CF2C511761007A165E /* Quakes+Toolbar.swift */,
+				49B8A2D12C5117A8007A165E /* ToolbarStatus.swift */,
+			);
+			path = toolbar;
+			sourceTree = "<group>";
+		};
+		49C8621C2C62374A00174502 /* quakeRow */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A2CB2C511568007A165E /* QuakeRow.swift */,
+			);
+			path = quakeRow;
+			sourceTree = "<group>";
+		};
+		49C8621D2C626BBA00174502 /* mainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				49C8621E2C626BE000174502 /* MainMenu.swift */,
+			);
+			path = mainMenu;
+			sourceTree = "<group>";
+		};
+		49C862202C627F3E00174502 /* notificationsSettings */ = {
+			isa = PBXGroup;
+			children = (
+				49C862212C627F6C00174502 /* NotificationSettingsView.swift */,
+				49C862232C62B24100174502 /* NotificationsSettingsViewModel.swift */,
+			);
+			path = notificationsSettings;
+			sourceTree = "<group>";
+		};
 		49F104F82C4B36EE00C217D8 = {
 			isa = PBXGroup;
 			children = (
 				49F105032C4B36EE00C217D8 /* ColombiaEarthquake */,
+				49B8A2AC2C4C238D007A165E /* ColombiaEarthquakeTests */,
 				49F105022C4B36EE00C217D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				49F105012C4B36EE00C217D8 /* ColombiaEarthquake.app */,
+				49F1051D2C4C21C600C217D8 /* EarthquakesTests.xctest */,
+				49B8A2AB2C4C238D007A165E /* ColombiaEarthquakeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +312,11 @@
 		49F105032C4B36EE00C217D8 /* ColombiaEarthquake */ = {
 			isa = PBXGroup;
 			children = (
+				49C862112C61AA1C00174502 /* remote */,
+				49C862102C61AA0600174502 /* repository */,
+				49C8620F2C61A9F800174502 /* domain */,
+				49C8620E2C61A9B100174502 /* presentation */,
+				49C8620D2C5D33EB00174502 /* Info.plist */,
 				49F105042C4B36EE00C217D8 /* ColombiaEarthquakeApp.swift */,
 				49F105062C4B36EE00C217D8 /* ContentView.swift */,
 				49F105082C4B36F000C217D8 /* Assets.xcassets */,
@@ -62,7 +328,9 @@
 		49F1050A2C4B36F000C217D8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				49B8A2B42C4C2499007A165E /* TestData.swift */,
 				49F1050B2C4B36F000C217D8 /* Preview Assets.xcassets */,
+				49B8A2C32C508B7A007A165E /* TestDownloader.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,6 +338,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49B8A2AA2C4C238D007A165E /* ColombiaEarthquakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B8A2B12C4C238D007A165E /* Build configuration list for PBXNativeTarget "ColombiaEarthquakeTests" */;
+			buildPhases = (
+				49B8A2A72C4C238D007A165E /* Sources */,
+				49B8A2A82C4C238D007A165E /* Frameworks */,
+				49B8A2A92C4C238D007A165E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49B8A2B02C4C238D007A165E /* PBXTargetDependency */,
+			);
+			name = ColombiaEarthquakeTests;
+			productName = ColombiaEarthquakeTests;
+			productReference = 49B8A2AB2C4C238D007A165E /* ColombiaEarthquakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49F105002C4B36EE00C217D8 /* ColombiaEarthquake */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49F1050F2C4B36F000C217D8 /* Build configuration list for PBXNativeTarget "ColombiaEarthquake" */;
@@ -87,6 +373,24 @@
 			productReference = 49F105012C4B36EE00C217D8 /* ColombiaEarthquake.app */;
 			productType = "com.apple.product-type.application";
 		};
+		49F1051C2C4C21C600C217D8 /* EarthquakesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F105232C4C21C600C217D8 /* Build configuration list for PBXNativeTarget "EarthquakesTests" */;
+			buildPhases = (
+				49F105192C4C21C600C217D8 /* Sources */,
+				49F1051A2C4C21C600C217D8 /* Frameworks */,
+				49F1051B2C4C21C600C217D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49F105222C4C21C600C217D8 /* PBXTargetDependency */,
+			);
+			name = EarthquakesTests;
+			productName = EarthquakesTests;
+			productReference = 49F1051D2C4C21C600C217D8 /* EarthquakesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,8 +401,16 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					49B8A2AA2C4C238D007A165E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 49F105002C4B36EE00C217D8;
+					};
 					49F105002C4B36EE00C217D8 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					49F1051C2C4C21C600C217D8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 49F105002C4B36EE00C217D8;
 					};
 				};
 			};
@@ -116,11 +428,20 @@
 			projectRoot = "";
 			targets = (
 				49F105002C4B36EE00C217D8 /* ColombiaEarthquake */,
+				49F1051C2C4C21C600C217D8 /* EarthquakesTests */,
+				49B8A2AA2C4C238D007A165E /* ColombiaEarthquakeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49B8A2A92C4C238D007A165E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F104FF2C4B36EE00C217D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,21 +451,126 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49F1051B2C4C21C600C217D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49B8A2A72C4C238D007A165E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B8A2AE2C4C238D007A165E /* ColombiaEarthquakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F104FD2C4B36EE00C217D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C8620C2C5C73D800174502 /* QuakeByPlace+Color.swift in Sources */,
+				49B8A2DA2C516BEB007A165E /* QuakeDetail.swift in Sources */,
+				49C861F82C5C0BCD00174502 /* Departmaneto.swift in Sources */,
+				49B8A2C62C51132F007A165E /* QuakesProvider.swift in Sources */,
+				49F105182C4B3C6600C217D8 /* QuakeError.swift in Sources */,
+				49C8620A2C5C70E800174502 /* QuakeByPlaceRow.swift in Sources */,
+				49C862262C62B2A900174502 /* SearchPlaceViewModel.swift in Sources */,
+				49C862042C5C5BEC00174502 /* PlaceEarthquake.swift in Sources */,
+				49B8A2D02C511761007A165E /* Quakes+Toolbar.swift in Sources */,
+				49C862002C5C2A2E00174502 /* CentroPoblado.swift in Sources */,
+				49B8A2B72C4EA36B007A165E /* QuakesData.swift in Sources */,
+				49C862242C62B24100174502 /* NotificationsSettingsViewModel.swift in Sources */,
+				49C861FC2C5C1F9500174502 /* Municipio.swift in Sources */,
+				49B8A2CE2C51159C007A165E /* QuakeMagnitude.swift in Sources */,
+				49C861F42C5BD59B00174502 /* Introduction.swift in Sources */,
+				49B8A2C22C508B03007A165E /* TestData.swift in Sources */,
+				49C862062C5C631A00174502 /* QuakeByPlace.swift in Sources */,
+				49B8A2D22C5117A8007A165E /* ToolbarStatus.swift in Sources */,
+				49C861FE2C5C20EE00174502 /* MunicipiosData.swift in Sources */,
+				4994FC8F2C582981000AA766 /* QuakesList.swift in Sources */,
+				49B8A2BF2C5082D8007A165E /* HTTPDataDownloader.swift in Sources */,
+				49B8A2CC2C511568007A165E /* QuakeRow.swift in Sources */,
+				49C862082C5C6C3E00174502 /* QuakesByPlacesData.swift in Sources */,
+				49C862022C5C2CC400174502 /* CentrosPobladosData.swift in Sources */,
 				49F105072C4B36EE00C217D8 /* ContentView.swift in Sources */,
 				49F105052C4B36EE00C217D8 /* ColombiaEarthquakeApp.swift in Sources */,
+				49C862222C627F6C00174502 /* NotificationSettingsView.swift in Sources */,
+				49B8A2C12C508398007A165E /* QuakeClient.swift in Sources */,
+				49C861FA2C5C0F2A00174502 /* DepartamentosData.swift in Sources */,
+				49B8A2DC2C516C17007A165E /* QuakeDetailMap.swift in Sources */,
+				49B8A2D82C5169FD007A165E /* Quake+Color.swift in Sources */,
+				49B8A2C42C508B7A007A165E /* TestDownloader.swift in Sources */,
+				49F105162C4B3BC100C217D8 /* QuakeLocation.swift in Sources */,
+				49C8621F2C626BE000174502 /* MainMenu.swift in Sources */,
+				49B8A2D42C5117E9007A165E /* RefreshButton.swift in Sources */,
+				49C862162C61ABC400174502 /* QuakeListViewModel.swift in Sources */,
+				49F105142C4B391200C217D8 /* Quake.swift in Sources */,
+				49C861F62C5BDF7C00174502 /* SearchPlace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F105192C4C21C600C217D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		49B8A2B02C4C238D007A165E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F105002C4B36EE00C217D8 /* ColombiaEarthquake */;
+			targetProxy = 49B8A2AF2C4C238D007A165E /* PBXContainerItemProxy */;
+		};
+		49F105222C4C21C600C217D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F105002C4B36EE00C217D8 /* ColombiaEarthquake */;
+			targetProxy = 49F105212C4C21C600C217D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		49B8A2B22C4C238D007A165E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.ColombiaEarthquakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColombiaEarthquake.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColombiaEarthquake";
+			};
+			name = Debug;
+		};
+		49B8A2B32C4C238D007A165E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.ColombiaEarthquakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColombiaEarthquake.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColombiaEarthquake";
+			};
+			name = Release;
+		};
 		49F1050D2C4B36F000C217D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,11 +695,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ColombiaEarthquake/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LB3PK53DCF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColombiaEarthquake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Terremotos Colombia";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -283,9 +716,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.ColombiaEarthquake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "My provissioning Colombia Earthquake";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,11 +732,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ColombiaEarthquake/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LB3PK53DCF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColombiaEarthquake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Terremotos Colombia";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,18 +753,63 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.ColombiaEarthquake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "My provissioning Colombia Earthquake";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
+		49F105242C4C21C600C217D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.EarthquakesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColombiaEarthquake.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColombiaEarthquake";
+			};
+			name = Debug;
+		};
+		49F105252C4C21C600C217D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelDev.EarthquakesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColombiaEarthquake.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColombiaEarthquake";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		49B8A2B12C4C238D007A165E /* Build configuration list for PBXNativeTarget "ColombiaEarthquakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B8A2B22C4C238D007A165E /* Debug */,
+				49B8A2B32C4C238D007A165E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49F104FC2C4B36EE00C217D8 /* Build configuration list for PBXProject "ColombiaEarthquake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -337,6 +824,15 @@
 			buildConfigurations = (
 				49F105102C4B36F000C217D8 /* Debug */,
 				49F105112C4B36F000C217D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F105232C4C21C600C217D8 /* Build configuration list for PBXNativeTarget "EarthquakesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F105242C4C21C600C217D8 /* Debug */,
+				49F105252C4C21C600C217D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

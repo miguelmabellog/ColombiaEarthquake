@@ -28,7 +28,6 @@ class QuakesProvider: ObservableObject {
     func fetchQuakes() async throws {
         let latestQuakes = try await client.quakes
         
-        // Actualiza el estado en el hilo principal
         DispatchQueue.main.async {
             self.quakes = latestQuakes
         }
