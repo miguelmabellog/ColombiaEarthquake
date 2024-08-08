@@ -41,6 +41,7 @@ class SearchPlaceViewModel: ObservableObject {
     
     func fetchDepartamentos() async {
         do {
+            isErrorLoading=false
             try await provider.fetchDepartamentos()
         } catch {
             print("Error fetching departamentos: \(error)")
