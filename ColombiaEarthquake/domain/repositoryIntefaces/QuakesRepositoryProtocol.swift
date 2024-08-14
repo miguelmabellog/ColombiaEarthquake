@@ -19,10 +19,7 @@ protocol QuakesRepositoryProtocol{
     
     func fetchLastByPlace(municipalityId: Int) async throws -> [CentroPoblado]
     
-    func fetchQuakesByPlace(municipalityId: Int) async throws -> [QuakeByPlace]
-
-
-    
+    func fetchQuakesByPlace(populatedCenterId: Int) async throws -> [QuakeByPlace]
 
     
     

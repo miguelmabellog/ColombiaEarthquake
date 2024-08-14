@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct UserPreferencesQuakeByPlaceModel{
+struct FetchBackgroundQuakeByPlaceModel{
     let isNotificationQuakeByPlaceEnable:Bool
-    let isNotificationLastQuakeColombiaEnable:Bool
     let lastQuakeByPlaceName:String?
     let lastQuakeByPlaceId:String?
-    let lastColomiaQuakeId:String?
+    let lastPopulatedCenterId:String?
 }
+
+
 
 

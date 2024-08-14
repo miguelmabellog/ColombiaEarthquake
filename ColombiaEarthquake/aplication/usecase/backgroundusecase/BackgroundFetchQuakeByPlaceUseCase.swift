@@ -22,7 +22,8 @@ class BackgroundFetchQuakeByPlaceUseCase: UseCaseProtocol {
         
         var result = BackgroundFetchQuakeByPlaceResult(
             quakeByPlace: nil,
-            isNewData: false
+            isNewData: false,
+            quakesByPlacesCount: 0
         )
         
         
@@ -32,11 +33,15 @@ class BackgroundFetchQuakeByPlaceUseCase: UseCaseProtocol {
         }
         let quakesByPlaces=try await quakesRepository.fetchQuakesByPlace(municipalityId: Int(lastPopulatedCenterId) ?? 0)
         
+        result.quakesByPlacesCount=quakesByPlaces.count
+        
         let lastQuakeByPlaceId = userPreferences.lastQuakeByPlaceId
         
         let containsQuake = quakesByPlaces.contains { quake in
             quake.quakebyplaceid == lastQuakeByPlaceId
         }
+       
+        
         
         if containsQuake {
             if quakesByPlaces.first?.id == lastQuakeByPlaceId{
@@ -45,6 +50,9 @@ class BackgroundFetchQuakeByPlaceUseCase: UseCaseProtocol {
                 result.isNewData=true
                 result.quakeByPlace=quakesByPlaces.first
             }
+        }else{
+            result.isNewData=true
+            result.quakeByPlace=quakesByPlaces.first
         }
         
         
@@ -57,4 +65,5 @@ class BackgroundFetchQuakeByPlaceUseCase: UseCaseProtocol {
 struct BackgroundFetchQuakeByPlaceResult{
     var quakeByPlace:QuakeByPlace?
     var isNewData:Bool
+    var quakesByPlacesCount:Int?
 }
