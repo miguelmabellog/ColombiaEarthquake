@@ -9,9 +9,10 @@ import SwiftUI
 
 
 
-struct PlaceEarthquake: View {
+struct QuakeListByPlace: View {
     let centroPobladoId: String
     let centroPobladoName: String
+    @StateObject private var viewModel: QuakeListByPlaceViewModel
     @EnvironmentObject var provider: QuakesProvider
 
     @AppStorage("lastUpdated")
@@ -64,7 +65,7 @@ struct PlaceEarthquake: View {
     }
 }
 
-extension PlaceEarthquake {
+extension QuakeListByPlace {
     var title: String {
         centroPobladoName
     }
